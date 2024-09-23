@@ -1,11 +1,8 @@
 def counting_sort(unsorted):
     k = max(unsorted)
     sorted = []
-    c = []
-    for i in range(k + 1):
-        c.append(0)
-    for i in range(len(unsorted)):
-        sorted.append(0)
+    c = [0] * (k + 1)
+    sorted = [0] * len(unsorted)
     for i in unsorted:
         c[i] += 1
     for i in range(1, k + 1):

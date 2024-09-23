@@ -32,7 +32,6 @@ def graph(sets, max_n, max_time):
         for n, t in algorithm[2:]:
             rely = t / max_time
             relx = n / max_n
-            pygame.draw.circle(screen, colors[idx], (relx * w, h - rely * h), 5) 
             pygame.draw.line(screen, colors[idx], (relx * w, h - rely * h), (px * w, h - py * h), 5)
             px = relx
             py = rely
